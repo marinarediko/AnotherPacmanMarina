@@ -1,0 +1,11 @@
+﻿Pac-man
+
+1. create classes (From, Area, Hero, Enemy, Food )
+2. add keyboard (WASD) controls and movement logic
+2. enemy movement logic
+4. food logic
+5. collisions
+6. scoring with animation
+7. level map design
+8. finalize, polish, release beta
+
