@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,6 +28,9 @@ namespace AnotherPacmanMarina
         public void InitializeGame()
         {
             this.Size = new Size(600, 600);
+            //add key down event handler
+            this.KeyDown += Game_KeyDown;
+
             // adding level to the game
             this.Controls.Add(level);
             //adding hero
@@ -48,9 +52,23 @@ namespace AnotherPacmanMarina
             hero.Left += hero.HorVelocity;
             hero.Top += hero.VerVelocity;
 
-
         }
 
+        private void Game_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch(e.KeyCode)
+            {
+                case Keys.Right:
+                    break;
+                case Keys.Down:
+                    break;
+                case Keys.Left:
+                    break;
+                case Keys.Up:
+                    break;
+            }
+
+        }
 
     }
 }
